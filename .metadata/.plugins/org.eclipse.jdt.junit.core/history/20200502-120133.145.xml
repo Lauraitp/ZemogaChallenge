@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Carnival" project="CarnivalChallenge" tests="2" started="2" failures="1" errors="0" ignored="0">
+  <testsuite name="com.zemoga.technicalchallenge.runners.Carnival" time="98.66">
+    <testsuite name="Feature: Carnival page to Search Cruises" time="98.66">
+      <testcase name="Search cruises" classname="Carnival page to Search Cruises" time="63.288"/>
+      <testcase name="See the itinerary of trip" classname="Carnival page to Search Cruises" time="35.372">
+        <failure>java.lang.AssertionError: Expected itinerary is
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;&#13;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)&#13;
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)&#13;
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:291)&#13;
+	at com.zemoga.technicalchallenge.stepdefinitions.CarnivalStepDefinition.verifyThatTheItineraryIsComplete(CarnivalStepDefinition.java:69)&#13;
+	at ✽.Verify that the itinerary is complete(src/test/resources/features/carnival.feature:13)&#13;
+&#13;
+</failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

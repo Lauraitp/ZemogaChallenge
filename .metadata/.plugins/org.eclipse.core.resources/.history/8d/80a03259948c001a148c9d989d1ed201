@@ -1,0 +1,33 @@
+package com.zemoga.technicalchallenge.questions;
+
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Question;
+import net.serenitybdd.screenplay.targets.Target;
+
+public class ItineraryIsComplete implements Question<Boolean> {
+	
+	private Target daysItinerary;
+	
+
+	public ItineraryIsComplete(Target daysItinerary) {
+		this.daysItinerary = daysItinerary;
+	}
+
+
+	@Override
+	public Boolean answeredBy(Actor actor) {
+		
+		
+		int daysOdd=actor.recall("odd");
+		int dayEven=actor.recall("even");
+		int daysTrip= Integer.parseInt(daysItinerary.resolveFor(actor).getTextValue());
+		
+		if(daysTrip+2==daysOdd+dayEven) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+
+	public static ItineraryIsComplete 
+}

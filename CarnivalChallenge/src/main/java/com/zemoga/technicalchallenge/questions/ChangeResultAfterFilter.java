@@ -10,8 +10,9 @@ public class ChangeResultAfterFilter implements Question<Boolean>{
 	@Override
 	public Boolean answeredBy(Actor actor) {
 		int before =actor.recall("beforeFilter");
+		System.out.println(before+"");
 		int after =actor.recall("afterFilter");
-		
+		System.out.println(after+"");
 		if(before>after) {
 			return true;
 		}else {

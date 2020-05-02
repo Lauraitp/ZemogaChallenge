@@ -31,7 +31,11 @@ public class MoveSlideBar implements Interaction{
 	            slider.sendKeys(Keys.ARROW_LEFT);
 	        }
 		 
-		 Wait.theTime(5000);
+		 try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		 
 		 actor.remember("afterFilter", currentResult(RESULTS.resolveFor(actor)));
 		

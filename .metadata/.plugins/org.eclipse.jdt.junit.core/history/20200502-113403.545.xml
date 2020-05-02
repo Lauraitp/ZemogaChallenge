@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Carnival" project="CarnivalChallenge" tests="2" started="2" failures="1" errors="0" ignored="0">
+  <testsuite name="com.zemoga.technicalchallenge.runners.Carnival" time="65.641">
+    <testsuite name="Feature: Carnival page to Search Cruises" time="65.641">
+      <testcase name="Search cruises" classname="Carnival page to Search Cruises" time="45.247">
+        <failure>java.lang.AssertionError: Expected change result after filter
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;&#13;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)&#13;
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)&#13;
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:291)&#13;
+	at com.zemoga.technicalchallenge.stepdefinitions.CarnivalStepDefinition.verifyThatTheResultsDecreaseWithTheFilter(CarnivalStepDefinition.java:48)&#13;
+	at ✽.Verify that the results decrease with the filter(src/test/resources/features/carnival.feature:7)&#13;
+&#13;
+</failure>
+      </testcase>
+      <testcase name="See the itinerary of trip" classname="Carnival page to Search Cruises" time="19.984">
+        <skipped>cucumber.runtime.junit.UndefinedThrowable: The step "She looking for all days to the itinerary" is undefined&#13;
+&#13;
+cucumber.runtime.junit.UndefinedThrowable: The step "Verify that the itinerary is complete" is undefined&#13;
+&#13;
+cucumber.runtime.junit.UndefinedThrowable: The step "Exist a button to Book the trip" is undefined&#13;
+&#13;
+</skipped>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>
