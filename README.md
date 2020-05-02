@@ -14,4 +14,4 @@ _**/CarnivalChallenge/src/test/java/com/zemoga/technicalchallenge/runners/Carniv
 
 4. [A video to the execute] (https://github.com/Lauraitp/ZemogaChallenge/blob/master/Automation%20Carnival%20Page%20to%20a%20Challenge.mp4)
 
-### Thanks To The Oportunity!
+### Thanks For The Opportunity!
