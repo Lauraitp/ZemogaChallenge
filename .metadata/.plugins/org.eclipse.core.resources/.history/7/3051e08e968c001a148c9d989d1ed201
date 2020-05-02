@@ -1,0 +1,53 @@
+package com.zemoga.technicalchallenge.interations;
+
+import static com.zemoga.technicalchallenge.userinterfaces.ResultCruisesPage.RESULTS;
+import static net.serenitybdd.screenplay.Tasks.instrumented;
+
+import org.openqa.selenium.Keys;
+
+import net.serenitybdd.core.pages.WebElementFacade;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Interaction;
+import net.serenitybdd.screenplay.targets.Target;
+import net.thucydides.core.annotations.Step;
+
+public class MoveSlideBar implements Interaction{
+	
+	private Target slideBar;
+	private int times;
+	
+	public MoveSlideBar(Target slideBar, int times) {
+		this.slideBar=slideBar;
+		this.times=times;
+	};
+
+	@Step("{0} Filts the '#slideBar' times '#times'")
+	@Override
+	public <T extends Actor> void performAs(T actor) {
+		actor.remember("beforeFilter", currentResult(RESULTS.resolveFor(actor)));
+		
+		WebElementFacade slider=slideBar.resolveFor(actor);
+		 for (int i = 1; i <= times; i++) {
+	            slider.sendKeys(Keys.ARROW_LEFT);
+	        }
+		 
+		 Wait.theTime(8000);
+		 
+		 actor.remember("afterFilter", currentResult(RESULTS.resolveFor(actor)));
+		
+	}
+	
+	private int currentResult(WebElementFacade currentCruises) {
+		
+		String completeResult=currentCruises.getTextValue();
+		
+		String [] allResult=completeResult.split(" ");
+		
+		return Integer.parseInt(allResult[0]);
+			
+		}
+	public static MoveSlideBar into(Target slideBar, int times) {
+		return instrumented(MoveSlideBar.class, slideBar, times);
+	}
+
+}

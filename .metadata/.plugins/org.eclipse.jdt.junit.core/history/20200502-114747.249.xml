@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Carnival" project="CarnivalChallenge" tests="2" started="2" failures="2" errors="0" ignored="0">
+  <testsuite name="com.zemoga.technicalchallenge.runners.Carnival" time="171.979">
+    <testsuite name="Feature: Carnival page to Search Cruises" time="171.979">
+      <testcase name="Search cruises" classname="Carnival page to Search Cruises" time="83.525">
+        <failure>java.lang.AssertionError: Expected change result after filter
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;&#13;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)&#13;
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)&#13;
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:291)&#13;
+	at com.zemoga.technicalchallenge.stepdefinitions.CarnivalStepDefinition.verifyThatTheResultsDecreaseWithTheFilter(CarnivalStepDefinition.java:55)&#13;
+	at ✽.Verify that the results decrease with the filter(src/test/resources/features/carnival.feature:8)&#13;
+&#13;
+</failure>
+      </testcase>
+      <testcase name="See the itinerary of trip" classname="Carnival page to Search Cruises" time="88.108">
+        <failure>java.lang.AssertionError: Expected condition failed: waiting for By.xpath: //*[@id="ccl-refresh-homepage"]/div/div/div/div/div/ccl-cruise-search/div[3]/ccl-view-result-container/div/ccl-view-result-grid/article[1]/ccl-view-result-grid-item/div/ccl-cruise-search-glance/a/span/span/span[1]/span/span to be present (tried for 30 second(s) with 100 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CPX-2D7YP00A4E5', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: driver.version: unknown&#13;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)&#13;
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)&#13;
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:291)&#13;
+	at com.zemoga.technicalchallenge.stepdefinitions.CarnivalStepDefinition.verifyThatTheItineraryIsComplete(CarnivalStepDefinition.java:72)&#13;
+	at ✽.Verify that the itinerary is complete(src/test/resources/features/carnival.feature:13)&#13;
+&#13;
+</failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

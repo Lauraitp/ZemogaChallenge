@@ -1,0 +1,5 @@
+package com.zemoga.technicalchallenge.tasks;
+
+public class FilterPrice {
+
+}

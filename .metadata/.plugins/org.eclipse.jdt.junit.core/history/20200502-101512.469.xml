@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Carnival" project="CarnivalChallenge" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.zemoga.technicalchallenge.runners.Carnival" time="0.256">
+    <testsuite name="Feature: Carnival page to Search Cruises" time="0.256">
+      <testcase name="Search cruises" classname="Carnival page to Search Cruises" time="0.256">
+        <skipped>cucumber.runtime.junit.UndefinedThrowable: The step "Open the Carnival Home Page" is undefined&#13;
+&#13;
+cucumber.runtime.junit.UndefinedThrowable: The step "Search a Cruises sail to The Bahamas and duration 6 - 9 Days to filter the price" is undefined&#13;
+&#13;
+cucumber.runtime.junit.UndefinedThrowable: The step "Verify that the results decrease with the filter" is undefined&#13;
+&#13;
+cucumber.runtime.junit.UndefinedThrowable: The step "the prices are ordered from the cheapest to the most expensive" is undefined&#13;
+&#13;
+</skipped>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

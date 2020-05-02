@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Carnival" project="CarnivalChallenge" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="com.zemoga.technicalchallenge.runners.Carnival" time="53.857">
+    <testsuite name="Feature: Carnival page to Search Cruises" time="53.857">
+      <testcase name="Search cruises" classname="Carnival page to Search Cruises" time="53.857">
+        <failure>java.lang.AssertionError: Expected change result after filter
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;&#13;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)&#13;
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)&#13;
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:291)&#13;
+	at com.zemoga.technicalchallenge.stepdefinitions.CarnivalStepDefinition.verifyThatTheResultsDecreaseWithTheFilter(CarnivalStepDefinition.java:48)&#13;
+	at ✽.Verify that the results decrease with the filter(src/test/resources/features/carnival.feature:7)&#13;
+&#13;
+</failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

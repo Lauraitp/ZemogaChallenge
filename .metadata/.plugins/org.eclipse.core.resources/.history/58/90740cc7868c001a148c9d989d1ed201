@@ -1,0 +1,19 @@
+package com.zemoga.technicalchallenge.runners;
+
+
+import cucumber.api.CucumberOptions;
+import net.serenitybdd.cucumber.CucumberWithSerenity;
+import org.junit.runner.RunWith;
+
+import static cucumber.api.SnippetType.CAMELCASE;
+
+@RunWith(CucumberWithSerenity.class)
+@CucumberOptions(monochrome=true,
+features = "src/test/resources/features/carnival.feature",
+glue = {"com.zemoga.technicalchallenge.stepdefinitions"},
+snippets = CAMELCASE)
+
+
+public class Carnival {
+
+}
