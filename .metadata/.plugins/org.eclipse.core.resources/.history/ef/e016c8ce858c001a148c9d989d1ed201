@@ -1,0 +1,13 @@
+serenity.project.name = reto sophos
+serenity.test.root = com.sophos.challenge.stepdefinitions
+webdriver.driver=chrome
+webdriver.chrome.driver = src/test/resources/drivers/chromedriver.exe
+chrome.switches = --lang=es,--disable-popup-blocking,--disable-downloadnotification,--start-maximized,--test-type,--ignore-certificate-errors, --allowrunning-insecurecontent, --disable-translate, --always-authorize-plugins, --disableextensions
+serenity.take.screenshots=FOR_FAILURES
+feature.file.encoding=UTF-8
+serenity.report.encoding=UTF-8
+#Espera implicita
+webdriver.timeouts.implicitlywait = 30000
+
+#Espera explicita
+webdriver.wait.for.timeout = 30000

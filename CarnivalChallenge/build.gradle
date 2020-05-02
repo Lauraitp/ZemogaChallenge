@@ -1,0 +1,49 @@
+group 'com.zemoga.technicalChallenge'
+version '1.0.0'
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+    mavenCentral()
+    mavenLocal()
+}
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenLocal()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.40")
+    }
+}
+
+	configurations.all {
+    resolutionStrategy {
+        force "io.cucumber:cucumber-core:4.2.0"
+    }
+}
+
+ext{
+    serenityVersion = '2.0.40'
+    jUnitVersion = '2.0.40'
+    serenityCucumberVersion = '1.0.4'
+}
+
+dependencies {
+    testImplementation "net.serenity-bdd:serenity-core:$rootProject.ext.serenityVersion"
+    testImplementation "net.serenity-bdd:serenity-junit:$rootProject.ext.jUnitVersion"
+    implementation "net.serenity-bdd:serenity-screenplay:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-cucumber4:$rootProject.ext.serenityCucumberVersion"
+    implementation "org.slf4j:slf4j-simple:1.7.7"
+	
+	    
+}
+
+gradle.startParameter.continueOnFailure = true
+
